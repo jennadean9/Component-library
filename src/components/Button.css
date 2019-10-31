@@ -1,8 +1,9 @@
 button {
-  border-radius: 2px;
+  border-radius: 1.5px;
   padding: 5px 25px;
   color: white;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 .button-primary {
   background-color: #33a0ff;
@@ -51,6 +52,7 @@ button {
 }
 .button-large {
   padding: 10px 50px;
+  font-size: 16px;
 }
 
 .button-outline {
