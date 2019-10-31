@@ -55,7 +55,56 @@ button {
   font-size: 16px;
 }
 
-.button-outline {
-  border: 2px solid green;
-  background-color: lightgreen;
+.button-primary-outline {
+  background-color: white;
+  border-color: #33a0ff;
+  color: #33a0ff;
+}
+
+.button-primary-fade {
+  background-color: #eaf2fd;
+  border: #eaf2fd;
+  color: #33a0ff;
+}
+
+.button-danger-outline {
+  background-color: white;
+  border-color: #ff4858;
+  color: #ff4858;
+}
+
+.button-danger-fade {
+  background-color: #ffecee;
+  border-color: #ffecee;
+  color: #ff4252;
+}
+.button-success-outline {
+  background-color: white;
+  color: #0ad00a;
+  border-color: #0ad00a;
+}
+.button-success-fade {
+  background-color: rgba(10, 208, 10, 0.1);
+  color: #0ad00a;
+  border-color: rgba(10, 208, 10, 0.1);
+}
+.button-warning-outline {
+  background-color: white;
+  border-color: #ffc600;
+  color: #ffc600;
+}
+.button-warning-fade {
+  border-color: rgba(255, 198, 0, 0.1);
+  background-color: rgba(255, 198, 0, 0.1);
+  color: #ffc600;
+}
+.button-default-outline {
+  background-color: white;
+  border-color: #22262a;
+  color: #22262a;
+}
+.button-default-fade {
+  border-color: rgba(34, 38, 42, 0.1);
+  background-color: rgba(34, 38, 42, 0.1);
+  color: #22262a;
 }

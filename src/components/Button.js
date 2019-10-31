@@ -5,19 +5,29 @@ import "./Button.css";
 const Button = props => {
   let classList = "";
 
-  let types = ["primary", "danger", "success", "warning", "default"];
+  let types = [
+    "primary",
+    "primary-outline",
+    "primary-fade",
+    "danger",
+    "danger-outline",
+    "danger-fade",
+    "success",
+    "success-outline",
+    "success-fade",
+    "warning",
+    "warning-outline",
+    "warning-fade",
+    "default",
+    "default-outline",
+    "default-fade"
+  ];
   if (types.includes(props.type)) {
     classList += ` button-${props.type}`;
   }
   if (props.large) {
     classList += ` button-large`;
   }
-  //   if (props.outline) {
-  //     classList += ` button-outline`;
-  //   }
-  //   if (props.fade) {
-  //     classList += ` button-fade`;
-  //   }
 
   return (
     <button class={classList} onClick={props}>
