@@ -1,6 +1,5 @@
 import React from "react";
 import "./Button.css";
-// import { type } from "os";
 
 const Button = props => {
   let classList = "";
@@ -21,7 +20,8 @@ const Button = props => {
 
   return (
     <button class={classList} onClick={props}>
-      Do Something
+      <img src={props.icon} />
+      {props.value}
     </button>
   );
 };
