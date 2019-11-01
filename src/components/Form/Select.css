@@ -11,10 +11,10 @@ select {
   appearance: none;
   background: url("../icons/arrow.png") 90% / 1.5% no-repeat #fafafb;
 }
-.select-border {
+.border {
   width: 150px;
   border: 1px solid #f1f3f4bd;
-  background-color: none;
+  background-color: white;
 }
 .select-small {
   height: 40px;
@@ -22,13 +22,13 @@ select {
 .select-med {
   padding: 18px;
   height: 50px;
-  width: 125px;
+  width: 80px;
 }
 .select-large {
   padding: 20px;
   height: 60px;
 }
-.select-fade {
+.fade {
   background-color: #fafafb;
   border-color: none;
 }

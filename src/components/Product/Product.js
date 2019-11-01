@@ -24,13 +24,15 @@ const Product = props => {
 
   return (
     <section class={classList}>
-      <img class="product" src={props.image} />
-      <hr></hr>
-      {props.title}
-      <img class="rate" src={stars}></img>
-      <div class="prices">
-        <span class="price">{price}</span>
-        <span class="cross">{crossPrice}</span>
+      <div class="that">
+        <img class="photo" src={props.image} />
+        <hr></hr>
+        {props.title}
+        <img class="rate" src={stars}></img>
+        <div class="prices">
+          <span class="price">{price}</span>
+          <span class="cross">{crossPrice}</span>
+        </div>
       </div>
     </section>
   );
