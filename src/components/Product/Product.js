@@ -2,6 +2,7 @@ import React from "react";
 import "./Product.css";
 import laptop from "./../images/laptop.png";
 import headphones from "./../images/headphones.png";
+import stars from "./../icons/rate.png";
 
 const Product = props => {
   let classList = "";
@@ -23,9 +24,10 @@ const Product = props => {
 
   return (
     <section class={classList}>
-      <img src={props.image} />
+      <img class="product" src={props.image} />
+      <hr></hr>
       {props.title}
-      <p>where rating will go</p>
+      <img class="rate" src={stars}></img>
       <div class="prices">
         <span class="price">{price}</span>
         <span class="cross">{crossPrice}</span>

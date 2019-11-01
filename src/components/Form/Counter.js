@@ -8,26 +8,32 @@ class Counter extends Component {
       count: 0
     };
   }
-  increaseCount = () => {
+  increase = () => {
     let count = this.state.count + 1;
     this.setState({
       count: count
     });
   };
-  decreaseCount = () => {
+  decrease = () => {
     let count = this.state.count - 1;
     this.setState({
-      count: count
+      count: count,
+      value: Math.max(count.value - 1, 0)
     });
+  };
+  decrement = () => {
+    this.setState(prevState => ({
+      value: Math.max(prevState.value - 1, 0)
+    }));
   };
   render() {
     return (
       <div className="counter">
-        <button className="change" onClick={this.decreaseCount}>
+        <button className="change" onClick={this.decrease}>
           -
         </button>
         <h4 className="display">{this.state.count}</h4>
-        <button className="change" onClick={this.increaseCount}>
+        <button className="change" onClick={this.increase}>
           +
         </button>
       </div>
