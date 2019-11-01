@@ -2,8 +2,11 @@ button {
   border-radius: 1.5px;
   padding: 5px 25px;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+}
+button:focus {
+  outline: 0;
 }
 .button-primary {
   background-color: #33a0ff;
@@ -107,4 +110,8 @@ button {
   border-color: rgba(34, 38, 42, 0.1);
   background-color: rgba(34, 38, 42, 0.1);
   color: #22262a;
+}
+.icon {
+  filter: invert(55%) sepia(94%) saturate(2312%) hue-rotate(185deg)
+    brightness(100%) contrast(103%);
 }

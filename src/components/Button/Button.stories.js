@@ -2,8 +2,8 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import Button from "./Button.js";
-import Heart from "./hearts.png";
-import ShoppingBag from "./shopping-bag.png";
+import Heart from "../icons/hearts.png";
+import ShoppingBag from "../icons/shopping-bag.png";
 
 storiesOf("Button", module)
   .add("Primary", () => <Button type="primary" value="Do Something" />)
@@ -85,10 +85,10 @@ storiesOf("Button", module)
     <Button type="default" value="Do Something" fade large />
   ))
   .add("Add to Cart", () => (
-    <Button type="primary" value="Add to Cart" icon="ShoppingBag" fade />
+    <Button type="primary" value="Add to Cart" icon={ShoppingBag} fade />
   ))
   .add("Add to Favorites", () => (
-    <Button type="primary" value="Add to Favorites" icon="Heart" fade />
+    <Button type="primary" value="Add to Favorites" icon={Heart} fade />
   ))
-  .add("Favorites", () => <Button type="primary" icon="Heart" fade />)
-  .add("Shop", () => <Button type="primary" icon="ShoppingBag" fade />);
+  .add("Favorites", () => <Button type="primary" icon={Heart} fade />)
+  .add("Shop", () => <Button type="primary" icon={ShoppingBag} fade />);

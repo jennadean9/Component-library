@@ -1,0 +1,21 @@
+.counter {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgba(246, 247, 248, 0.762);
+  width: 100px;
+  position: relative;
+}
+
+.display {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+}
+.change {
+  background-color: rgba(246, 247, 248, 0.762);
+  border: none;
+  height: 60px;
+  color: #33a0ff;
+  font-size: 20px;
+}

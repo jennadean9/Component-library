@@ -1,0 +1,37 @@
+form {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 300px;
+  position: relative;
+}
+select {
+  text-transform: capitalize;
+  appearance: none;
+  background: url("../icons/arrow.png") 90% / 1.5% no-repeat #fafafb;
+}
+.select-border {
+  width: 150px;
+  border: 1px solid #f1f3f4bd;
+  background-color: none;
+}
+.select-small {
+  height: 40px;
+}
+.select-med {
+  padding: 18px;
+  height: 50px;
+  width: 125px;
+}
+.select-large {
+  padding: 20px;
+  height: 60px;
+}
+.select-fade {
+  background-color: #fafafb;
+  border-color: none;
+}
+option {
+  margin: 2px;
+}

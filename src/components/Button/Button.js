@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+// import heart from "../images/hearts.png"
 
 const Button = props => {
   let classList = "";
@@ -20,7 +21,7 @@ const Button = props => {
 
   return (
     <button class={classList} onClick={props}>
-      <img src={props.icon} />
+      <img class="icon" src={props.icon} />
       {props.value}
     </button>
   );

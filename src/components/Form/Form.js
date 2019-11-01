@@ -1,10 +1,10 @@
 import React from "react";
 import "./Form.css";
-import Arrow from "./arrow.png";
+import Button from "../Button/Button.js";
 
 const Form = props => {
   let classList = "";
-  let types = ["email", "select", "value"];
+  let types = "";
 
   if (types.includes(props.type)) {
     classList += ` input-${props.size}`;
@@ -18,11 +18,19 @@ const Form = props => {
   if (props.large) {
     classList += ` input-large`;
   }
+  if (props.label) {
+    return (
+      <form className="voucher">
+        <input className={classList} placeholder={props.value} />
+        <Button label="Redeem" type="primary"></Button>
+      </form>
+    );
+  }
+
   return (
     <form>
-      {props.value}
+      {props.title}
       <input type="text" className={classList} placeholder={props.value} />
-      <img src={props.icon} />
     </form>
   );
 };
