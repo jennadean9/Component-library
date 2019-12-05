@@ -18,6 +18,9 @@ const Button = props => {
   if (props.fade) {
     classList += ` button-fade`;
   }
+  if (props.icon) {
+    classList += ` button-icon`;
+  }
 
   return (
     <button class={classList} onClick={props}>

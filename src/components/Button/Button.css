@@ -1,9 +1,14 @@
 button {
   border-radius: 1.5px;
-  padding: 5px 25px;
+  padding: 5px 40px;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Proxima-nova, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 button:focus {
   outline: 0;
@@ -114,4 +119,7 @@ button:focus {
 .icon {
   filter: invert(55%) sepia(94%) saturate(2312%) hue-rotate(185deg)
     brightness(100%) contrast(103%);
+}
+.iconNone {
+  display: none;
 }

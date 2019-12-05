@@ -58,7 +58,7 @@ hr {
   height: 163px;
   padding: 15px;
 }
-.that {
+.thumbnail {
   display: flex;
   flex-direction: column;
   align-items: center;

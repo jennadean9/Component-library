@@ -5,27 +5,28 @@ class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: this.props.count,
+      max: this.props.max,
+      min: this.props.min
     };
   }
   increase = () => {
-    let count = this.state.count + 1;
-    this.setState({
-      count: count
-    });
+    if (this.state.count < this.state.max) {
+      let count = this.state.count + 1;
+      this.setState({
+        count: count
+      });
+    }
   };
   decrease = () => {
-    let count = this.state.count - 1;
-    this.setState({
-      count: count,
-      value: Math.max(count.value - 1, 0)
-    });
+    if (this.state.count > this.state.min) {
+      let count = this.state.count - 1;
+      this.setState({
+        count: count
+      });
+    }
   };
-  decrement = () => {
-    this.setState(prevState => ({
-      value: Math.max(prevState.value - 1, 0)
-    }));
-  };
+
   render() {
     return (
       <div className="counter">

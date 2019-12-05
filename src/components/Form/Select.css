@@ -9,7 +9,8 @@ form {
 select {
   text-transform: capitalize;
   appearance: none;
-  background: url("../icons/arrow.png") 90% / 1.5% no-repeat #fafafb;
+  background: url("../icons/arrow.png") 90% / 2% no-repeat #fafafb;
+  width: 150px;
 }
 .border {
   width: 150px;

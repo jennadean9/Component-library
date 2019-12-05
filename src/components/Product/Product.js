@@ -24,7 +24,7 @@ const Product = props => {
 
   return (
     <section class={classList}>
-      <div class="that">
+      <div className="thumbnail">
         <img class="photo" src={props.image} />
         <hr></hr>
         {props.title}

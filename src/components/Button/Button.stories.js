@@ -73,7 +73,7 @@ storiesOf("Button", module)
     <Button type="default" value="Do Something" outline />
   ))
   .add("Default Fade", () => (
-    <Button type="default" value="Do Something" value="Do Something" fade />
+    <Button type="default" value="Do Something" fade />
   ))
   .add("Default Large", () => (
     <Button type="default" value="Do Something" large />
